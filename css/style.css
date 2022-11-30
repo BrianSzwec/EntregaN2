@@ -8,7 +8,7 @@
 
 /* INDEX PRINCIPAL */
 .cuerpoindex {
-  background-image: url(../img/avion.jpg);
+  background-image: url(../img/index.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -234,7 +234,7 @@ section.cajacuatro {
   border-radius: 30px;
 }
 
-/* mediaqueries */
+/* mediaqueries index*/
 
 @media (min-width: 999px) {
   .tituloIndex {
@@ -364,3 +364,76 @@ section.cajacuatro {
         width: 99%;
     }
 }
+
+/* hoteles */
+
+.masbuscados{
+    display: flex ;
+    text-align: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgba(128, 128, 128, 0.158);
+    color: white;
+    font: tahoma;
+}
+#mainHoteles{
+    background-image: url(../img/avion.jpg);
+    background-repeat: none;
+    
+} 
+
+
+.footerHoteles{
+  background-color: rgba(128, 128, 128, 0.571);
+}
+
+h2.busmapa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.571);
+}
+.paginasRedes{
+  background-color: rgba(128, 128, 128, 0.571);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: tahoma;
+  padding: 10px;
+}
+.pp{
+  border: solid 1px black;
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+  background-color:rgba(0, 0, 0, 0.582);
+}
+.pp:hover{
+  transition: 1s;
+  transform: scale(2, 2);
+  background-color: red;
+  animation: 1s;
+  color: white;
+
+}
+.pyou{
+  border: solid 1px black;
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+  background-color:rgba(0, 0, 0, 0.582);
+}
+.pyou:hover{
+  transition: 1s;
+  transform: scale(2, 2);
+  background-color: red;
+  animation: 1s;
+  color: white;
+}
+
+
+.mapahotel{
+  background-color: rgba(128, 128, 128, 0.158);
+  border: black solid 4px;
+}
+

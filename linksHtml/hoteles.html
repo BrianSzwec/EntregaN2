@@ -2,46 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Hoteles</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Hoteles</title>
 </head>
 
 
 
 
 
-<header id="cabeza">
-    <nav>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">Home</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="./alquiler.html">Alquiler</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./cruceros.html">Cruceros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+
 <body class="hotelcuerpo">
-    <section>
-        <h1 class="masbuscados">Hoteles mas buscados</h1>
-        <!-- <div>
+  <header id="cabeza">
+    <nav>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+                <a class="nav-link" href="./alquiler.html">Alquiler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./cruceros.html">Cruceros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+      <main id="mainHoteles">
+
+
+        <section>
+
+
+          <h1 class="masbuscados">Hoteles mas buscados</h1>
+          <!-- <div>
             <li>Orlando Resort</li>
                        <a href="https://www.youtube.com/watch?v=FZN6CPzrLXU">Que hacer en Miami?</a>
 
@@ -56,59 +68,168 @@
             </div> -->
 
 
-        <img class="sky" src="../img/Taipei_Skyline_2015.jpg" alt="">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img/cordobahotel.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-sm d-md-block">
+                    <h4>Hotel 5 estrellas Cordoba</h4>
+                    <p>Es el hotel mas buscado debido a su calidad y precio</p>
+                   
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/hoteljujuy.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-sm d-md-block">
+                    <h4>Gran Apart Jujuy</h4>
+                    <p>Mas visitado por su locacion 5 estrellas</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/saltahotel.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-sm d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Proxima</span>
+              </button>
+            </div>
+          <!-- <div class="videoViajes">
+            <img class="sky" src="../img/Taipei_Skyline_2015.jpg" alt="" width="100%">
 
-        <div class="vidviajes">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/CO1IR0lfHmc"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
+            
+            <iframe width="50%" height="50%" src="https://www.youtube.com/embed/CO1IR0lfHmc"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div> -->
+          <form class="row g-3">
+            <div class="col-md-3">
+              <label for=".." class="form-label">Nombre completo</label>
+              <input type="text" class="form-control is-valid" id="validationServer01" value="Raul" required>
+              <div class="valid-feedback" >
+                Perfecto!
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationServer02" class="form-label">Apellido</label>
+              <input type="text" class="form-control is-valid" id="validationServer02" value="Juarez" required>
+              <div class="valid-feedback">
+                Perfecto!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for=".." class="form-label">Email</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend3">Email</span>
+                <input type="email" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                  Porfavor ingrese su email.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationServer04" class="form-label">Pais</label>
+              <select class="form-select valid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                <option selected disabled value="">Elija pais</option>
+                <option>Argentina</option>
+                <option>Uruguay</option>
+                <option>Venezuela</option>
+                <option>Brasil</option>
+              </select>
+              
+            </div>
+            <div class="col-md-3">
+              <label for="validationServer04" class="form-label">Hoteles</label>
+              <select class="form-select valid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                <option selected disabled value="">Seleccione</option>
+                <option>Libertador</option>
+                <option>Ajax</option>
+                <option>Newport</option>
+                <option>Romans</option>
+              </select>
+              
+            </div>
+            
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                <label class="form-check-label" for="invalidCheck3">
+                  Acepto terminos y condiciones.
+                </label>
+                
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar Consulta</button>
+            </div>
+          </form>
+          
+          <!-- <div class="list1">
+            <ul class="listaprov">
+              <li>Buenos aires</li>
+              <li>Cordoba</li>
+              <li>San luis</li>
+              <li>Catamarca</li>
+              <li>Neuquen</li>
+              <li>La rioja</li>
+            </ul>
+          </div>
+          <div class="list2">
+             <ul>
+              <li>Rio Negro</li>
+              <li>Corrientes</li>
+              <li>San juan</li>
+              <li>Misiones</li>
+              <li>Concordia</li>
+              <li>Bahia Blanca</li>
+              <li>San Martin</li>
+            </ul>
+          </div> -->
+          
+
+
+      </main>
+
+      <footer id="footerHoteles">
 
         <div>
-            <ul class="listaprov">
-                <li>Buenos aires</li>
-                <li>Cordoba</li>
-                <li>San luis</li>
-                <li>Catamarca</li>
-                <li>Neuquen</li>
-                <li>La rioja</li>
-                <li>Rio Negro</li>
-                <li>Corrientes</li>
-                <li>San juan</li>
-                <li>Misiones</li>
-                <li>Concordia</li>
-                <li>Bahia Blanca</li>
-                <li>San Martin</li>
-            </ul>
-        </div>
-
-
-
-
-<footer>
-
-    <div>
-        <nav>
+          <nav>
             <h2 class="busmapa">Busca en el Mapa!</h2>
             <div class="mapahotel">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d210079.56709438804!2d-58.48125729602034!3d-34.64224450588018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps!5e0!3m2!1ses-419!2sar!4v1667319776069!5m2!1ses-419!2sar"
-                    width="300" height="300" s allowfullscreen="" loading="lazy" referrerpolicy="no-refer"></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d210079.56709438804!2d-58.48125729602034!3d-34.64224450588018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps!5e0!3m2!1ses-419!2sar!4v1667319776069!5m2!1ses-419!2sar"
+                width="100%" height="300"  allowfullscreen="" loading="lazy" referrerpolicy="no-refer"></iframe>
             </div>
-        </nav>
-    </div>
-    <div>
-        <ul class="futer">
-            <a href="../index.html">Pagina Principal</a>
+          </nav>
+        </div>
+        <div class="paginasRedes">
+          <ul class="futer">
+            <a href="../index.html" class="pp">Pagina Principal</a>
 
-            <a href="www.youtube.com.ar">youtube</a>
+            <a href="https://www.youtube.com.ar" class="pyou">Youtube</a>
 
-        </ul>
+          </ul>
 
-    </div>
-</footer>
+        </div>
+      </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
+
 </html
