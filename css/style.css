@@ -24,6 +24,14 @@
   padding: 0;
   display: flex;
 }
+.navbar-brand{
+  
+  border: solid 1px black;
+  padding: 10px;
+  background-color: black;
+  color: white;
+   border-radius: 30px;
+   }
 
 .nav-item {
   display: flex;
@@ -236,6 +244,27 @@ section.cajacuatro {
 
 /* mediaqueries index*/
 
+
+@media(min-width:900px){
+  #navbarNav{
+    display: flex;
+    margin-left: 15rem;
+  }
+}
+
+@media(min-width:900px){
+  .navbar-brand{
+    margin-left: 5rem;
+    border: solid 1px black;
+    padding: 10px;
+    background-color: black;
+    color: white;
+     border-radius: 30px;
+  }
+}
+
+
+
 @media (min-width: 999px) {
   .tituloIndex {
     display: inline-block;
@@ -437,3 +466,211 @@ h2.busmapa{
   border: black solid 4px;
 }
 
+   /* INICIO ALQUILER */
+   
+   body.fondo{
+    background-image: url(../img/porch\ trompa.jpg);
+    background-size:contain; 
+    background-repeat: none
+    ;
+    
+}
+
+div.conten{
+    display: inline-flex;
+    position: relative;
+    left: 760px;
+    border: solid 5px grey;
+    border-radius: 30px;
+    background-color: grey;
+}
+
+div.contn{
+    display: inline-flex;
+    position: relative;
+    left: 450px;
+    top: 100px;
+}
+div.sexos{
+    display: inline-flex;
+    padding: 3px;
+    border: solid 3px grey;
+    background-color: grey;
+    border-radius: 30px;
+    position: relative;
+    left: 760px;
+    top: 85px;
+}
+
+
+    
+
+div.border{
+    position: relative;
+    padding: 4px;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    top: 200px;
+    
+       
+}
+div.contenedortablaauto{
+    display: flex;  
+    justify-content:left;
+    padding: 50px;
+
+    
+
+  
+
+}
+
+
+#auto tr,th {
+    background-color: rgba(128, 128, 128, 0.671) ;
+    color:white;
+    border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px 50px;
+}
+#moto tr,th{
+    background-color: rgba(128, 128, 128, 0.671) ;
+    color:white;
+    border: 1px solid black;
+        border-collapse: collapse;
+}
+
+/* tablas */
+    table,tr,th{
+        border: 1px solid black;
+        border-collapse: collapse;
+        
+        
+        
+    }
+    
+    tr,th,td{
+    
+        padding: 10px 50px;
+    
+    }
+
+/* tablas */
+
+/* CRUCEROS */
+body{
+  background-image: url(../img/crucero.jpg);
+}
+
+h1.decruceros {
+  display: inline-block;
+  position: relative;
+  left: 100px;
+  margin-top: 100px;
+}
+
+h2.decruceros{
+  display: inline-block;
+  font-family: tahoma black;
+  position:relative;
+  left: 500px;
+  top: 500px;
+}
+/* CONTACTO */
+.selectores a {
+  display: inline-block;
+  font-family: tahoma black;
+  font-size: 1.0em;
+  border: solid 5px rgb(103, 160, 226);
+  border-radius: 100px;
+  background-color: rgb(103, 160, 226);
+  padding: 8px;
+  margin-left: 10em;
+  margin-top: 1em;
+  
+ 
+
+
+}
+
+body {
+  background-image: url(../img/CONTACTO.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+div.envianostuconsulta {
+  display: inline-block;
+  font-family: tahoma black;
+  border: solid 5px rgb(103, 160, 226);
+  padding: 0.3em;
+  background-color: rgb(103, 160, 226);
+  border-radius: 50px;
+  margin-left: 21.5em;
+  margin-top: 6em;
+  
+ 
+
+}
+
+
+
+div.textonombre {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 150px;
+  align-items: center;
+  border: solid 5px rgb(103, 160, 226);
+  border-width: 10px;
+  opacity: 50%;
+  border-radius: 100px;
+  left: 8em;
+  bottom: 4em;
+
+
+}
+
+div.email {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 150px;
+  border: solid 5px rgb(103, 160, 226);
+  border-width: 10px;
+  opacity: 50%;
+  border-radius: 100px;
+ top: 6.25em;
+ right: 8em;
+}
+
+div.textarea{
+  display: inline-block;
+  position: relative;
+  top: 20em;
+  right: 24em;
+  opacity: 50%;
+  border: solid 10px rgb(103, 160, 226);
+}
+
+div.boton{
+  display: inline-block ;
+ position: relative;
+ border: solid 10px black;
+ border-style: solid;
+ color: black;
+ border-radius: 50px;
+ right: 20em;
+ top: 20em;
+}
+
+footer.h { 
+  font-family: tahoma;
+  color: white;
+   font-size: 2em;
+   margin-left: 14.5em;
+   margin-bottom:10em;
+   }
