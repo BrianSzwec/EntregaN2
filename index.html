@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./css/style.css">
     <title>Vuelos Aereos</title>
 </head>
@@ -14,55 +16,71 @@
 
 <!-- comienzo body -->
 
+
+
 <body class="cuerpoindex">
-    <header>
-        <nav>
-            <div>
-                <ul class="links">
     
-                    <li><a name="hotelesi" href="./linksHtml/hoteles.html">Hoteles</a></li>
-                    <li><a name="crucerosi" href="./linksHtml/cruceros.html">Cruceros</a></li>
-                    <li><a name="alquileri" href="./linksHtml/alquiler.html">Alquiler</a></li>
-                    <li><a name="contactoi" href="./linksHtml/contacto.html">Contacto</a></li>
-                    
-    
-                </ul>
-            </div>
-        </nav>
-    
-    
-    
-    </header>
 
-    <form class="formulario" action="" id="Datosservidor"></form>
-       
-    <div class="cuenta">
-            <label for="ingrenombre" id="Ingresa tu Nombre">Cuenta:</label>
-            <input type="text" id="ingrenombre" value="" placeholder="Ingresa tu Cuenta" required>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./linksHtml/hoteles.html">Hoteles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./linksHtml/alquiler.html">Alquiler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./linksHtml/cruceros.html">Cruceros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./linksHtml/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
 
-        <div class="cuenta">
-            <label for="ingrdni">Password:</label>
-            <input type="password" id="pasword" value="" placeholder="Ingresa tu contraseña" required>
+      <form action="ingreso">
+      <div class="containerCuenta">
+        <label for="staticEmail" class="labelCuenta">Email</label>
+        <div class="divCuenta">
+          <input type="text"   class="inputCuenta" value="" placeholder="email@ejemplo.com" required>
         </div>
-        <input class="botonpas" type="submit" value="Ingresar">
-    </form>
-
-        <form action="" class="fbuscador">
-        <nav class="buscador">
-            <input class="buscador" type="search" placeholder="Buscador de vuelos" size="40px" >
+      </div>
+      <div class="containerCuenta">
+        <label for="inputPassword" class="labelPassword">Password</label>
+        <div class="divPassword">
+          <input type="password" class="inputPassword" width="30px">
+          <input type="submit" value="Ingresar" class="botonCuentas" >
+        </div>
         
-        <input class="botonbuscador" type="submit" value="Buscar">
-    </nav>
+      </div>
     </form>
+    <form action="search" class="fbuscador">
+      <nav class="buscador">
+          <input class="buscador" type="search" placeholder="Buscador de vuelos" size="40px" >
+      
+      <input class="botonbuscador" type="submit" value="Buscar">
+  </nav>
+  </form>
+      
+  
 
-    <h1>Voila!!</h1>
+    <h1 class="tituloIndex">Voila!!</h1>
+
+      
+
+    
 
 
-
-<div class="articulos">
-        <article class="miami">
-        <div>
+        <article class="tarjetas">
+        <div class="tarjetamiami">
             <h3>Miami</h3>
             <ul>
                 <li>1 semana</li>
@@ -70,8 +88,8 @@
                 <li>100 usd</li>
             </ul>
     </article>
-    <article class="francia">
-        <div>
+    <article class="tarjetas">
+        <div class="tarjetafrancia">
         <h3>Francia</h3>
         <ul>
             <li>1 semana</li>
@@ -80,8 +98,8 @@
         </ul>
     </div>
     </article>
-    <article class="italia">
-        <div>
+    <article class="tarjetas">
+        <div class="tarjetaitalia">
         <h3>Italia</h3>
         <ul>
             <li>1 semana</li>
@@ -90,12 +108,13 @@
         </ul>
     </div>
     </article>
-    <article class="deportivo">
-        <div>
-        <h3>Aquiler Deportivo</h3>
+    <article class="tarjetadepo">
+        <div class="tarjetadeportivo">
+        <a href="./linksHtml/alquiler.html"></a>
+        <h3>Alquiler Deportivo</h3>
         <ul>
             <li>Consulte</li>
-
+            <a href="./linksHtml/alquiler.html" class="aqui">Aqui</a>
         </ul>
     </div>
     </div>
@@ -141,24 +160,33 @@
             <ul>Aerolineas Argentinas</ul>
 
     </section>
+
 <div class="map">
-    <iframe
+    <iframe class="mapa"
                 src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d210079.56709438804!2d-58.48125729602034!3d-34.64224450588018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps!5e0!3m2!1ses-419!2sar!4v1667319776069!5m2!1ses-419!2sar"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-refer">
+                width="400" height="200" style="border: 3px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-refer">
 </div>
-    <section>
+  
+    <!-- <section>
+        <div class="insta">
+        <a href="https://www.instagram.com/quimicosbarracas/">Instagram</a>
+      </div>
 
-        <a href="https:"//www.instagram.com/quimicosbarracas/">Instagram</a>
+         <div class="facebook">
         <a href="https://www.facebook.com/">Facebook</a>
-        <a href="http://https://twitter.com/">Twitter</a>
-        <a href="./linksHtml/legales.html">FaQs</a>
+      </div>
 
-    </section>
+        <div class="twitter">
+        <a href="http://https://twitter.com/">Twitter</a>
+      </div>
+     </section> -->
+
+     
 
    
 </footer>
 
 
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
