@@ -14,11 +14,12 @@
 
 
 
-<body class="fondo">
+<body>
+
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">Home</a>
+                <a class="navbar-brand" href="/index.html">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -42,9 +43,10 @@
     </header>
 
 
-    <main>
+    <main class="backAlquiler">
 
-        <h1>Alquiler Deportivo</h1>
+
+        <!-- <h1>Alquiler Deportivo</h1>
 
         <section>
             <div class="sexos">
@@ -79,86 +81,90 @@
             </select>
 
             <input type="submit" value="Enviar" name="Datosservidor">
-        </div>
+        </div> -->
 
-
-        <table id="auto">
-            <tr>
-
-                <th>Vehiculos:</th>
-                <th>Dias</th>
-                <th>Valor</th>
-
-            </tr>
-            <tr>
-                <td>Bmw M7</td>
-                <td></td>
-                <td></td>
-
-            </tr>
-            <tr>
-                <td>Lamborghini</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Masceratti</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Ferrari Spyder</td>
-                <td></td>
-                <td></td>
-            </tr>
-
-        </table>
-
-
-
-
-
-        <section id="sec2">
-            <div class="border">Motos Acuaticas</div>
-
-            <div class="cmoto">
-
-                <table id="moto">
-                    <tr>
+        <section>
+            <table id="tablaAlquiler" class="table table-dark ">
+                <div class="containerTable">
+                    <thead>
                         <th>Vehiculos:</th>
-                        <th>Dias</th>
+                        <th> Dias</th>
                         <th>Valor</th>
-                    </tr>
-                    <tr>
-                        <td>Honda xrv</td>
-                        <td></td>
-                        <td></td>
+                    </thead>
+                    <tbody>
+                        <tr class="table-active">
+                            <td colspan="1">Bmw m7</td>
+                            <th><input type="date"></th>
+                            <th>$1000</th>
+                        </tr>
+                        <tr>
+                            <td>Lamborghini</td>
+                            <th><input type="date"></th>
+                            <th>$1000</th>
+                        </tr>
+                        <tr>
+                            <td>Masceratti</td>
+                            <th><input type="date"></th>
+                            <th>$1000</th>
+                        <tr>
+                            <td>Ferrari Spyder</td>
+                            <th><input type="date"></th>
+                            <th>$1000</th>
+                        </tr>
+                        </tr>
 
-                    </tr>
+                    </tbody>
+            </table>
+            </div>
+        </section>
 
-                    <tr>
-                        <td>Kawasaki vr</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Yamaha t80</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Suzuki Top</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </div class="conmot">
+        <div class="bordeNegro">Motos Acuaticas</div>
 
+        <section class="seccionAqua">
+            <table id="tablaAlquiler" class="table table-dark ">
+                <div class="containerTableA">
+                    <thead>
+                        <th>Dias</th>
+                        <th> Valor</th>
+                        <th>Vehiculos:</th>
+                    </thead>
+                    <tbody>
+                        <tr class="table-active">
+                            <td colspan="1">$350</td>
+                            <th><input type="date"></th>
+                            <th>Honda xrv</th>
+                        </tr>
+                        <tr>
+                            <td>$650</td>
+                            <th><input type="date"></th>
+                            <th>Kawasaki vr</th>
+                        </tr>
+                        <tr>
+                            <td>$500</td>
+                            <th><input type="date"></th>
+                            <th>Yamaha t80</th>
+                        <tr>
+                            <td>$200</td>
+                            <th><input type="date"></th>
+                            <th>Suzuki Top</th>
+                        </tr>
+                        </tr>
 
+                    </tbody>
+            </table>
+            </div>
         </section>
 
 
     </main>
+    <footer id="pieAlquiler">
+<div class="containerRedes">
+    <a href="http://instagram.com">Instagram</a>
+    <a href="http://twitter.com">Twitter</a>
+    <a href="http://facebook.com">Facebook</a>
+</div>
+
+    </footer>
 
 
 

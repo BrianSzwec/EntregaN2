@@ -36,7 +36,7 @@
 .nav-item {
   display: flex;
   justify-content: space-between;
-  margin-left: 50%;
+  margin-left: 20%;
 }
 
 /* H1 */
@@ -467,102 +467,97 @@ h2.busmapa{
 }
 
    /* INICIO ALQUILER */
-   
-   body.fondo{
-    background-image: url(../img/porch\ trompa.jpg);
-    background-size:contain; 
-    background-repeat: none
-    ;
-    
+ .backAlquiler{
+  background-image: url(../img/porch\ trompa.jpg);
+  background-size: 100% 600px;
+  height: 400px;
+  background-repeat: no-repeat  ;
+ } 
+
+.containerTable{
+  padding-top: 70px;
+  
 }
 
-div.conten{
-    display: inline-flex;
-    position: relative;
-    left: 760px;
-    border: solid 5px grey;
-    border-radius: 30px;
-    background-color: grey;
+.bordeNegro{
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: tahoma;
+  font-size: 1.5rem;
+padding: 5px;
+  margin-top: 5rem;
 }
 
-div.contn{
-    display: inline-flex;
-    position: relative;
-    left: 450px;
-    top: 100px;
+.seccionAqua{
+  background-image: url(../img/motodeaguaalquiler.jpg);
+  background-size: cover;
 }
-div.sexos{
-    display: inline-flex;
-    padding: 3px;
-    border: solid 3px grey;
-    background-color: grey;
-    border-radius: 30px;
-    position: relative;
-    left: 760px;
-    top: 85px;
+.containerTableA{
+  padding-top: 30px ;
+  }
+
+
+
+.table-dark{
+  width: 50%;
+  background-color: black;
+  border: solid white 1px;
+  margin: 0 40px;
+  display: inline-block;
+}
+#pieAlquiler{
+  
+  background-color: black;
+  padding: 25px;
+  transform: translate(0,370px);
+}
+.containerRedes{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-family: tahoma;
+  font-size: 1.5rem;
+  transform: translate(0px , 0);
+  border: 1px solid white;
+  color: white;
+
+  width: 100%;
 }
 
-
-    
-
-div.border{
-    position: relative;
-    padding: 4px;
-    text-align: center;
-    font-family: tahoma;
-    font-size: 25px;
-    color: white;
-    background-color: black;
-    top: 200px;
-    
-       
+@media (min-width:900px){
+  .table-dark{
+    display: inline;
+    margin-left: 50vh;
+  }
 }
-div.contenedortablaauto{
-    display: flex;  
-    justify-content:left;
-    padding: 50px;
 
-    
+@media (min-width:900px) {
+  .seccionAqua{
+    height: 50vh;
+  }
 
   
-
 }
 
 
-#auto tr,th {
-    background-color: rgba(128, 128, 128, 0.671) ;
-    color:white;
-    border: 1px solid black;
-        border-collapse: collapse;
-        padding: 10px 50px;
-}
-#moto tr,th{
-    background-color: rgba(128, 128, 128, 0.671) ;
-    color:white;
-    border: 1px solid black;
-        border-collapse: collapse;
-}
-
-/* tablas */
-    table,tr,th{
-        border: 1px solid black;
-        border-collapse: collapse;
-        
-        
-        
-    }
-    
-    tr,th,td{
-    
-        padding: 10px 50px;
-    
-    }
-
-/* tablas */
 
 /* CRUCEROS */
-body{
+.containerfluid{
+  background-color: rgba(51, 140, 243, 0.877);
+  padding: 10px;
+  width: 415px;
+
+}
+.navbar-toggler{
+  position: relative;
+  left: 220px;
+  border: solid 1px black;
+}
+.mainCruceros{
   background-image: url(../img/crucero.jpg);
+  height: 100vh ;
 }
 
 h1.decruceros {
@@ -596,7 +591,7 @@ h2.decruceros{
 
 }
 
-body {
+bodys {
   background-image: url(../img/CONTACTO.jpg);
   background-repeat: no-repeat;
   background-size: cover;
