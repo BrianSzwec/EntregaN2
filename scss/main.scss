@@ -1,0 +1,405 @@
+
+ $light-color: red;
+ $dark-color: white;
+ $gray-color: white;
+ $main-font: 'tahoma';
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.cuerpoindex {
+  background-image: url(../img/index.jpg);
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-fluid {
+  display: flex;
+  background-color: rgba(51, 140, 243, 0.877);
+  padding: 10px;
+ 
+  }
+  .navbar {
+    padding: 0px;
+
+  .navbar-brand {
+    border: solid 1px black;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+  }
+
+  & .nav-item {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+  }
+}
+h1.tituloIndex {
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  background-color: rgba(51, 140, 243, 0.877);
+  align-items: center;
+  justify-content: center;
+}
+
+.containerCuenta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .labelCuenta {
+    color: white;
+    padding-right: 10px;
+    font-size: 1.5rem;
+  }
+}
+
+.containerPassword {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .labelPassword {
+    color: white;
+    padding-right: 10px;
+    font-size: 1.5rem;
+  }
+  & .botonCuentas {
+    background-color: rgba(51, 140, 243, 0.877);
+    background-size: cover;
+    padding: 5px;
+  }
+
+  & :hover {
+    padding: 5px;
+    transform: scale(1);
+    transition: 0.5s;
+    color: red;
+    border-radius: 30px;
+  }
+}
+
+.fbuscador {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .botonbuscador {
+    padding: 5px;
+    background-color: rgba(51, 140, 243, 0.877);
+    transition: 0.5s;
+  }
+
+  & .botonbuscador:hover {
+    padding: 5px;
+    transform: scale(1);
+    transition: 0.5s;
+    color: red;
+    border-radius: 30px;
+    background-color: rgba(51, 140, 243, 0.877);
+  }
+}
+
+ul ol li {
+  list-style: none;
+  text-decoration: none;
+  margin: 0px;
+}
+
+article.tarjetas {
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  text-decoration: none;
+
+  & .tarjetamiami {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    background-image: url(../img/miamihd.jpg);
+    background-size: cover;
+    color: black;
+    padding: 20px 40px;
+    box-shadow: 10px 5px 5px 5px black;
+  }
+
+  & .tarjetafrancia {
+    background-image: url(../img/francia.jpg);
+    background-size: cover;
+    padding: 20px 40px;
+    box-shadow: 10px 5px 5px 5px black;
+    margin-left: 10px;
+  }
+
+  & .tarjetaitalia {
+    background-image: url(../img/italiahd.jpg);
+    background-size: cover;
+    padding: 20px 40px;
+    box-shadow: 10px 5px 5px 5px black;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  & .tarjetadeportivo {
+    display: flex;
+    position: relative;
+    background-image: url(../img/deportivo.jpg);
+    background-size: cover;
+    padding: 40px 5px;
+    box-shadow: 10px 5px 5px 5px black;
+  }
+
+  & a.aqui {
+    font-family: tahoma;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  & h3 {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  & li {
+    color: white;
+  }
+  & :hover {
+    transition: 4s;
+    transform: scale(1.1, 1.1);
+    animation: 2s;
+  }
+}
+
+footer {
+  & .cajauno {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: rgba(128, 128, 128, 0.571);
+    border-radius: 30px;
+  }
+
+  & .cajados {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: rgba(128, 128, 128, 0.571);
+    border-radius: 30px;
+  }
+
+  & .cajatres {
+    display: inline-block;
+    text-align: center;
+
+    margin-top: 3px;
+    background-color: rgba(128, 128, 128, 0.571);
+    border-radius: 30px;
+  }
+
+  & .cajacuatro {
+    display: inline-block;
+    padding: 5px;
+    margin-top: 1px;
+    background-color: rgba(128, 128, 128, 0.571);
+    border-radius: 30px;
+    text-align: center;
+  }
+}
+
+#mainHoteles {
+  background-image: url(../img/avion.jpg);
+  background-repeat: none;
+
+  & h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgba(128, 128, 128, 0.158);
+    color: white;
+    font: tahoma;
+  }
+}
+
+#footer.hoteles {
+  background-color: rgba(128, 128, 128, 0.571);
+}
+.busmapa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.571);
+}
+.paginasRedes {
+  background-color: rgba(128, 128, 128, 0.571);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: tahoma;
+  padding: 10px;
+
+}
+
+.pp{
+    border: solid 1px black;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.582);
+
+             
+        
+  }
+  
+  .pp:hover{
+    transition: 1s;
+    transform: scale(2, 2);
+    background-color: red;
+    animation: 1s;
+    color: white;
+  
+  }
+  .ppyou{
+    border: solid 1px black;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.582);
+
+ }
+ 
+ .ppyou:hover{
+    transition: 1s;
+    transform: scale(2, 2);
+    background-color: red;
+    animation: 1s;
+    color: white;
+ }
+ .mapahotel{
+    background-color: rgba(128, 128, 128, 0.158);
+    border: black solid 4px;
+  }
+
+
+
+
+  header.hAlquiler{
+    height: 80px;
+    background-color:rgba(51, 140, 243, 0.877)
+  }
+
+
+
+
+
+
+ //Contacto
+
+ //variabletxt
+ body,
+ html{
+   font-family: tahoma;
+
+  }
+
+h1,h2,h3{
+  padding: 15px;
+  color: white;
+}
+footer.h{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: cente;
+  bottom: 80px;
+}
+a,
+a:visited{
+  text-decoration: none;
+  color: purple;
+}
+label.txt__Contacto{
+  color: white;
+
+}
+
+.container{
+  margin:auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.botn{
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background: black;
+  padding: 13px 30px;
+  border: none;
+  cursor: pointer;
+}
+   .botn:hover{
+     background: lightgray;
+   }
+
+   .large {
+     font-size: 1.5rem;
+   }
+   .small{
+     font-size: .6rem;
+   }
+   .txt-primary{
+     color:$light-color;
+   }
+
+   .txt-gray{
+     color: $gray-color;
+   }
+  
+   .p-80{
+     padding: 80px;
+   }
+   .bk{
+     background-image: url(../img/CONTACTO.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+   }
+
+  @media (min-width:900px) {
+    .form{
+      display: block;
+      
+     
+    }
+    .cont__login{ 
+      position: relative;
+      margin-bottom: 30px
+    ;
+    }
+    #tituloContacto{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .txt__Contacto{
+      margin-top: 10px;
+      font-size: 1.5rem;
+     
+    }
+    #Comentarios{
+      display: flex;
+      margin-top: 20px;
+    }
+  }
+   

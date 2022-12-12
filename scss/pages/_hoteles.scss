@@ -1,0 +1,73 @@
+#mainHoteles {
+    background-image: url(../img/avion.jpg);
+    background-repeat: none;
+  
+    & h1 {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      padding: 40px;
+      background-color: rgba(128, 128, 128, 0.158);
+      color: white;
+      font: tahoma;
+    }
+  }
+  
+  #footer.hoteles {
+    background-color: rgba(128, 128, 128, 0.571);
+  }
+  .busmapa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.571);
+  }
+  .paginasRedes {
+    background-color: rgba(128, 128, 128, 0.571);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: tahoma;
+    padding: 10px;
+  
+  }
+  
+  .pp{
+      border: solid 1px black;
+      padding: 5px;
+      border-radius: 20px;
+      color: white;
+      background-color:rgba(0, 0, 0, 0.582);
+  
+               
+          
+    }
+    
+    .pp:hover{
+      transition: 1s;
+      transform: scale(2, 2);
+      background-color: red;
+      animation: 1s;
+      color: white;
+    
+    }
+    .ppyou{
+      border: solid 1px black;
+      padding: 5px;
+      border-radius: 20px;
+      color: white;
+      background-color:rgba(0, 0, 0, 0.582);
+  
+   }
+   
+   .ppyou:hover{
+      transition: 1s;
+      transform: scale(2, 2);
+      background-color: red;
+      animation: 1s;
+      color: white;
+   }
+   .mapahotel{
+      background-color: rgba(128, 128, 128, 0.158);
+      border: black solid 4px;
+    }

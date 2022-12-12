@@ -7,165 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Alquiler</title>
 </head>
 
-
-
-
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html">Home</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./hoteles.html">Hoteles</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="./cruceros.html">Cruceros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <header id="hAlquiler">
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+        &#8801
+        </label>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Hoteles</a>
+            <a href="#">Cruceros</a>
+            <a href="#">Contacto</a>
+            <label for="check" class="esconder-menu">
+    
+            </label>
+    
         </nav>
     </header>
-
-
-    <main class="backAlquiler">
-
-
-        <!-- <h1>Alquiler Deportivo</h1>
-
-        <section>
-            <div class="sexos">
-                <span> Ingrese sexo:</span>
-                <span>
-                    Masculino
-                </span>
-
-                <input type="radio" value="1" name="genero" id="generohombre" required>
-                <span>
-                    Femenino
-                </span>
-                <input type="radio" value="1" name="genero" id="generomujer" required>
-            </div>
-        </section>
-
-
-        <div class="conten">
-            <label for="fecha">Fechas disponibles:</label>
-            <input type="date" name="" id="fecha" required>
-        </div>
-
-        <div class="contn">
-
-            <select name="Tipos De intereses">
-
-                <option value="Banco Nacion">Banco Nacion 18 cuotas T.N.A 6%</option>
-                <option value="Banco Provincia ">Banco Provincia 12 cuotas T.N.A 15%</option>
-                <option value="Banco Patagonia ">Banco Chaco 6 cuotas T.N.A 0%</option>
-                <option value="Banco Frances ">Banco Frances 3 cuotas T.N.A 0% + 20% reintegro</option>
-
-            </select>
-
-            <input type="submit" value="Enviar" name="Datosservidor">
-        </div> -->
-
-        <section>
-            <table id="tablaAlquiler" class="table table-dark ">
-                <div class="containerTable">
-                    <thead>
-                        <th>Vehiculos:</th>
-                        <th> Dias</th>
-                        <th>Valor</th>
-                    </thead>
-                    <tbody>
-                        <tr class="table-active">
-                            <td colspan="1">Bmw m7</td>
-                            <th><input type="date"></th>
-                            <th>$1000</th>
-                        </tr>
-                        <tr>
-                            <td>Lamborghini</td>
-                            <th><input type="date"></th>
-                            <th>$1000</th>
-                        </tr>
-                        <tr>
-                            <td>Masceratti</td>
-                            <th><input type="date"></th>
-                            <th>$1000</th>
-                        <tr>
-                            <td>Ferrari Spyder</td>
-                            <th><input type="date"></th>
-                            <th>$1000</th>
-                        </tr>
-                        </tr>
-
-                    </tbody>
-            </table>
-            </div>
-        </section>
-
-        <div class="bordeNegro">Motos Acuaticas</div>
-
-        <section class="seccionAqua">
-            <table id="tablaAlquiler" class="table table-dark ">
-                <div class="containerTableA">
-                    <thead>
-                        <th>Dias</th>
-                        <th> Valor</th>
-                        <th>Vehiculos:</th>
-                    </thead>
-                    <tbody>
-                        <tr class="table-active">
-                            <td colspan="1">$350</td>
-                            <th><input type="date"></th>
-                            <th>Honda xrv</th>
-                        </tr>
-                        <tr>
-                            <td>$650</td>
-                            <th><input type="date"></th>
-                            <th>Kawasaki vr</th>
-                        </tr>
-                        <tr>
-                            <td>$500</td>
-                            <th><input type="date"></th>
-                            <th>Yamaha t80</th>
-                        <tr>
-                            <td>$200</td>
-                            <th><input type="date"></th>
-                            <th>Suzuki Top</th>
-                        </tr>
-                        </tr>
-
-                    </tbody>
-            </table>
-            </div>
-        </section>
-
-
-    </main>
-    <footer id="pieAlquiler">
-<div class="containerRedes">
-    <a href="http://instagram.com">Instagram</a>
-    <a href="http://twitter.com">Twitter</a>
-    <a href="http://facebook.com">Facebook</a>
-</div>
-
-    </footer>
-
+    
 
 
 
