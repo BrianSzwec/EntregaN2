@@ -1,0 +1,151 @@
+
+//index
+@media(min-width:900px){
+    #navbarNav{
+      display: flex;
+      margin-left: 15rem;
+    }
+  }
+  
+  @media(min-width:900px){
+    .navbar-brand{
+      margin-left: 5rem;
+      border: solid 1px black;
+      padding: 10px;
+      background-color: black;
+      color: white;
+       border-radius: 30px;
+    }
+  }
+  
+  
+  
+  @media (min-width: 900px) {
+    .tituloIndex {
+      display: inline-block;
+     
+      color: white;
+      background-color: black;
+      padding: 1px 8px;
+      border-radius: 30px;
+      position: relative;
+      
+    }
+   }
+  
+   @media (min-width: 900px) {
+    .containerCuenta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+  }
+  @media (min-width: 900px) {
+  
+  
+  .tarjetamiami {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    background-image: url(../img/miamihd.jpg);
+    background-size: cover;
+    color: white;
+    padding: 5rem 7rem;
+    height: 350px;
+    width: 350px;
+    margin-left: 30px;
+    margin-right: 50px;
+  
+    & h3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+    }
+  }}
+  @media (min-width: 900px) {
+    div.tarjetafrancia {
+      padding: 5rem 7rem;
+      box-shadow: 10px 5px 5px black;
+      height: 350px;
+      width: 350px;
+    & h3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+    }
+    }
+  }
+  @media (min-width: 900px) {
+    div.tarjetaitalia {
+      display: inline-block;
+      background-size: cover;
+      color: black;
+      padding: 5rem 7rem;
+      height: 350px;
+      width: 350px;
+      
+      & h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+      }
+  
+    }
+  }
+  @media (min-width: 900px) {
+    div.tarjetadeportivo {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 10px 5px 5px black;
+      color: white;
+      height: 400px;
+      width: 600px;
+      left: 350px;
+      margin-top: 20px;
+      
+      
+    }
+  }
+  @media (min-width: 900px) {
+    section.cajauno , section.cajados , section.cajatres , section.cajacuatro {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      padding: 10px;
+      margin-top: 30px;
+      background-color: rgba(128, 128, 128, 0.571);
+      border-radius: 30px;
+   
+    }
+  }
+  @media (min-width:900px){
+    .mapa{
+        width: 99%;
+    }
+  }
+//
+
+
+//cruceros
+@media screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
+    .container .content {
+        grid-column: 1 / -1;
+    }
+    .container .sidebar {
+        grid-column: 1 / 6;
+    }
+
+    .container .related-post {
+        grid-column: 1/-1;
+    }
+}
+// 
