@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="297mm" height="420mm" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 297 420"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+   <clipPath id="id0">
+    <rect x="0.2332" y="-0.7402" width="296.603" height="222.452"/>
+   </clipPath>
+   <clipPath id="id1">
+    <rect x="0.3334" y="221.599" width="296.503" height="166.782"/>
+   </clipPath>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g style="clip-path:url(#id0)">
+   <image transform="matrix(3.42108 0 0 3.42108 -507.797 -496.715)" x="148.5" y="144.976" width="86.6986" height="65.0238" xlink:href="fondoAlqui_Images\fondoAlqui_ImgID1.png"/>
+  </g>
+  <g style="clip-path:url(#id1)">
+   <image transform="matrix(3.41992 0 0 3.41992 -507.525 -329.802)" x="148.5" y="161.232" width="86.6986" height="48.7678" xlink:href="fondoAlqui_Images\fondoAlqui_ImgID2.png"/>
+  </g>
+ </g>
+</svg>
