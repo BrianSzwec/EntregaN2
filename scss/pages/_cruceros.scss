@@ -1,0 +1,99 @@
+.decruceros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.9em;
+  }
+   #bk_cru{
+     background-image: url(../img/crucero.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+   }
+   
+   .container {
+     width: 90%;
+     max-width: 1000px;
+     margin: 1.6em auto;
+     display: grid;
+     gap: 1.6em;
+     /* grid-template-columns: repeat(4, 1fr) 3%; */
+     grid-template-columns: repeat(5, 1fr);
+ }
+ 
+ .container>.header, .container>.content, .container>.sidebar, .container>.footerC, .container>div {
+    
+     padding: 20px;
+     border: 1px solid black;
+ }
+ 
+ .container>.header, .container>.footerC {
+     grid-column: 1/-1;
+     background-color: #1e272e;
+     color: #ffffff;
+ }
+ 
+ .container>.content {
+     grid-column: span 3;
+     grid-row: span 4;
+ }
+ 
+ .content>.article {
+     background: #808e9b;
+     padding: 20px;
+     margin-top: 5px;
+     color: #dfe6e9
+ }
+ 
+ 
+ 
+ .container>.sidebar {
+     grid-column: span 2;
+     grid-row: span 4;
+     background: #485460;
+     color: #ffffff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .container .sidebar img {
+     display: block;
+     width: 100%;
+     margin-top: 20px;
+ }
+ 
+ .container>.related-post {
+     background:rgba(128, 128, 128, 0.493);
+     color: #ffffff;
+     height: 100px;
+     
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    
+ }
+ 
+ .container>.related-post:hover {
+     cursor: pointer;
+     transition: 2s;
+     transform: scale(1.1, 1.1);
+     animation: 2s;
+     
+ }
+ .footerC{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .infoTu{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .deCrucerocom{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+ }

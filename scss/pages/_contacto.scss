@@ -1,0 +1,103 @@
+//Contacto
+
+ 
+body,
+html{
+  font-family: tahoma;
+
+ }
+
+h1,h2,h3{
+ padding: 15px;
+ color: white;
+}
+footer.h{
+ display: flex;
+ position: relative;
+ justify-content: center;
+ align-items: cente;
+ bottom: 80px;
+}
+a,
+a:visited{
+ text-decoration: none;
+ color: purple;
+}
+label.txt__Contacto{
+ color: white;
+
+}
+
+.container{
+ margin:auto;
+ max-width: 1300px;
+ overflow: auto;
+ padding: 0 10px;
+}
+
+.botn{
+ display: inline-block;
+ font-size: 18px;
+ color: white;
+ background: black;
+ padding: 13px 30px;
+ border: none;
+ cursor: pointer;
+}
+  .botn:hover{
+    background: lightgray;
+  }
+
+  .large {
+    font-size: 1.5rem;
+  }
+  .small{
+    font-size: .6rem;
+  }
+  .txt-primary{
+    color:$light-color;
+  }
+
+  .txt-gray{
+    color: $gray-color;
+  }
+ 
+  .p-80{
+    padding: 80px;
+  }
+  .fondoContacto{
+    background-image: url(../img/CONTACTO.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1500px;
+   
+   
+  }
+
+
+ @media (min-width:900px) {
+   .form{
+     display: block;
+     
+    
+   }
+   .cont__login{ 
+     position: relative;
+     margin-bottom: 30px
+   ;
+   }
+   #tituloContacto{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .txt__Contacto{
+     margin-top: 10px;
+     font-size: 1.5rem;
+    
+   }
+   #Comentarios{
+     display: flex;
+     margin-top: 20px;
+   }
+ }

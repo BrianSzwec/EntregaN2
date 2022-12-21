@@ -1,219 +1,334 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-
-}
-
-.cuerpoindex{
-    background-image: url(../img/index.jpg);
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-
-.container-fluid{
-    display: flex;
-background-color: rgba(51, 140, 243, 0.877);
-padding: 10px;
-
-    & nav{
-        padding: 0px;
-    }
-
-
-     & .navbar-brand{
-        border: solid 1px black;
-   padding: 5px;
+.cuerpoindex {
+  background-image: url(../img/index.jpg);
   background-color: black;
-   color: white;    border-radius: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-fluid {
+  display: flex;
+  background-color: rgba(51, 140, 243, 0.877);
+  padding: 10px;
+ 
+  }
+  .navbar {
+    padding: 0px;
+
+  .navbar-brand {
+    border: solid 1px black;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+  }
+
+  & .nav-item {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+  }
+}
+h1.tituloIndex {
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  background-color: rgba(51, 140, 243, 0.877);
+  align-items: center;
+  justify-content: center;
+}
+
+.containerCuenta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .labelCuenta {
+    color: white;
+    padding-right: 10px;
+    font-size: 1.5rem;
+  }
+}
+
+.containerPassword {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .labelPassword {
+    color: white;
+    padding-right: 10px;
+    font-size: 1.5rem;
+  }
+  & .botonCuentas {
+    background-color: rgba(51, 140, 243, 0.877);
+    background-size: cover;
+    padding: 5px;
+  }
+
+  & :hover {
+    padding: 5px;
+    transform: scale(1);
+    transition: 0.5s;
+    color: red;
+    border-radius: 30px;
+  }
+}
+
+.fbuscador {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .botonbuscador {
+    padding: 5px;
+    background-color: rgba(51, 140, 243, 0.877);
+    transition: 0.5s;
+  }
+
+  & .botonbuscador:hover {
+    padding: 5px;
+    transform: scale(1);
+    transition: 0.5s;
+    color: red;
+    border-radius: 30px;
+    background-color: rgba(51, 140, 243, 0.877);
+  }
+}
+
+ul ol li {
+  list-style: none;
+  text-decoration: none;
+  margin: 0px;
+}
+
+article.tarjetas {
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  text-decoration: none;
+
+  & .tarjetamiami {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    background-image: url(../img/miamihd.jpg);
+    background-size: cover;
+    color: black;
+    padding: 20px 40px;
+    box-shadow: 10px 5px 5px 5px black;
+  }
+
+  & .tarjetafrancia {
+    background-image: url(../img/francia.jpg);
+    background-size: cover;
+    padding: 20px 40px;
+    box-shadow: 10px 5px 5px 5px black;
+    margin-left: 10px;
+  }
+
+  & .tarjetaitalia {
+    background-image: url(../img/italiahd.jpg);
+    background-size: cover;
+    padding: 20px 40px;
+    box-shadow: 10px 5px 5px 5px black;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  & .tarjetadeportivo {
+    display: flex;
+    position: relative;
+    background-image: url(../img/deportivo.jpg);
+    background-size: cover;
+    padding: 40px 5px;
+    box-shadow: 10px 5px 5px 5px black;
+  }
+
+  & a.aqui {
+    font-family: tahoma;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  & h3 {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  & li {
+    color: white;
+  }
+  & :hover {
+    transition: 4s;
+    transform: scale(1.1, 1.1);
+    animation: 2s;
+  }
+}
+
+footer {
+  & .cajauno {
+    display: inline-block;
+    padding: 5px;
+    margin-top: 30px;
+    background-color: rgba(128, 128, 128, 0.571);
+    border-radius: 30px;
+  }
+
+  & .cajados {
+    display: inline-block;
+    padding: 5px;
+    margin-top: 30px;
+    background-color: rgba(128, 128, 128, 0.571);
+    border-radius: 30px;
+  }
+
+  & .cajatres {
+    display: inline-block;
+    text-align: center;
+
+    margin-top: 3px;
+    background-color: rgba(128, 128, 128, 0.571);
+    border-radius: 30px;
+  }
+
+  & .cajacuatro {
+    display: inline-block;
+    padding: 5px;
+    margin-top: 30px;
+    background-color: rgba(128, 128, 128, 0.571);
+    border-radius: 30px;
+    text-align: center;
+  }
+}
+
+@media(min-width:900px){
+  #navbarNav{
+    display: flex;
+    margin-left: 15rem;
+  }
+}
+
+@media(min-width:900px){
+  .navbar-brand{
+    margin-left: 5rem;
+    border: solid 1px black;
+    padding: 10px;
+    background-color: black;
+    color: white;
+     border-radius: 30px;
+  }
+}
+
+
+
+@media (min-width: 900px) {
+  .tituloIndex {
+    display: inline-block;
+   
+    color: white;
+    background-color: black;
+    padding: 1px 8px;
+    border-radius: 30px;
+    position: relative;
+    
+  }
  }
 
+ @media (min-width: 900px) {
+  .containerCuenta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+@media (min-width: 900px) {
 
-     &  .nav-item {
-        display: flex;
-        justify-content: space-between;
-        margin-left: 20%;
-      }
+
+.tarjetamiami {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  background-image: url(../img/miamihd.jpg);
+  background-size: cover;
+  color: white;
+  padding: 5rem 7rem;
+  height: 350px;
+  width: 350px;
+  margin-left: 30px;
+  margin-right: 50px;
+
+  & h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}}
+@media (min-width: 900px) {
+  div.tarjetafrancia {
+    padding: 5rem 7rem;
+    box-shadow: 10px 5px 5px black;
+    height: 350px;
+    width: 350px;
+  & h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  }
+}
+@media (min-width: 900px) {
+  div.tarjetaitalia {
+    display: inline-block;
+    background-size: cover;
+    color: black;
+    padding: 5rem 7rem;
+    height: 350px;
+    width: 350px;
+    
+    & h3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
     }
-      h1.tituloIndex {
-        color: white;
-        margin-top: 20px;
-        display: flex;
-        background-color: rgba(51, 140, 243, 0.877);
-        align-items: center;
-        justify-content: center;
-      }
 
-      .containerCuenta {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-      & .labelCuenta {
-        color: white;
-        padding-right: 10px;
-        font-size: 1.5rem;
-
-
-
-      }
-    }
-
-    .containerPassword{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        & .labelPassword {
-            color: white;
-            padding-right: 10px;
-            font-size: 1.5rem;
-          }
-          & .botonCuentas {
-            background-color: rgba(51, 140, 243, 0.877);
-            background-size: cover;
-            padding: 5px;   }
-
-          & :hover {
-            padding: 5px;
-            transform: scale(1);
-            transition: 0.5s;
-            color: red;
-            border-radius: 30px;
-          }
-
-    }
-
-    .fbuscador {
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        & .botonbuscador {
-            padding: 5px;
-            background-color: rgba(51, 140, 243, 0.877);
-            transition: 0.5s;
-          }
-
-        & .botonbuscador:hover {
-            padding: 5px;
-            transform: scale(1);
-            transition: 0.5s;
-            color: red;
-            border-radius: 30px;
-            background-color: rgba(51, 140, 243, 0.877);
-          }
-      }
-
-      ul ol li {
-        list-style: none;
-        text-decoration: none;
-        margin: 0px;
-      } 
-
-      article.tarjetas{
-        display: inline-block;
-        position: relative;
-        list-style: none;
-        text-decoration: none;
-        
-            & .tarjetamiami {
-                display: inline-block;
-                text-decoration: none;
-                list-style: none;
-                background-image: url(../img/miamihd.jpg);
-                background-size: cover;
-                color: black;
-                padding: 20px 40px;
-                box-shadow: 10px 5px 5px 5px black;
-              }
-
-             
-
-              & .tarjetafrancia {
-                background-image: url(../img/francia.jpg);
-                background-size: cover;
-                padding: 20px 40px;
-                box-shadow: 10px 5px 5px 5px black;
-                margin-left: 10px;
-              }
-              
-              & .tarjetaitalia {
-                background-image: url(../img/italiahd.jpg);
-                background-size: cover;
-                padding: 20px 40px;
-                box-shadow: 10px 5px 5px 5px black;
-                margin-left: 5rem;
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-              }
-
-              & .tarjetadeportivo {
-                display: flex;
-                position: relative;
-                background-image: url(../img/deportivo.jpg);
-                background-size: cover;
-                padding: 40px 5px;
-                box-shadow: 10px 5px 5px 5px black;
-              }
-
-            & a.aqui {
-                font-family: tahoma;
-                font-size: 1.5rem;
-                color:white
-              }
-
-              & h3{
-                  color: white;
-                  font-size: 1.5rem;
-              }
-
-              & li {
-                  color: white;
-              }
-              & :hover {
-                transition: 4s;
-                transform: scale(1.1, 1.1);
-                animation: 2s;
-              }
-      }
-      
-      footer{
-          & .cajauno {
-            display: inline-block;
-            padding: 10px;
-            margin-top: 30px;
-            background-color: rgba(128, 128, 128, 0.571);
-            border-radius: 30px;
-          }
-
-          & .cajados {
-            display: inline-block;
-            padding: 10px;
-            margin-top: 30px;
-            background-color: rgba(128, 128, 128, 0.571);
-            border-radius: 30px;
-          }
-
-          & .cajatres {
-            display: inline-block;
-            text-align: center;
-          
-            margin-top: 3px;
-            background-color: rgba(128, 128, 128, 0.571);
-            border-radius: 30px;
-          }
-
-          & .cajacuatro {
-            display: inline-block;
-            padding: 5px;
-            margin-top: 1px;
-            background-color: rgba(128, 128, 128, 0.571);
-            border-radius: 30px;
-            text-align: center;
-          }
-      }
+  }
+}
+@media (min-width: 900px) {
+  div.tarjetadeportivo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 5px 5px black;
+    color: white;
+    height: 400px;
+    width: 600px;
+    left: 350px;
+    margin-top: 20px;
+    
+    
+  }
+}
+@media (min-width: 900px) {
+  section.cajauno , section.cajados , section.cajatres , section.cajacuatro {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: rgba(128, 128, 128, 0.571);
+    border-radius: 30px;
+ 
+  }
+}
+@media (min-width:900px){
+  .mapa{
+      width: 99%;
+  }
+}
