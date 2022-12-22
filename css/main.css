@@ -543,8 +543,9 @@ label.txt__Contacto {
     margin-top: 20px;
   }
 }
-.decruceros {
+.deCruceroscom {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   font-size: 2.9em;
