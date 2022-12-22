@@ -280,6 +280,58 @@ footer .cajacuatro {
     height: 250px;
     width: 250px;
   }
+  .tarjetadeportivo {
+    width: 250px;
+    height: 250px;
+    bottom: 300px;
+    left: 65px;
+  }
+  .containerMiami {
+    display: inline-block;
+    transform: translate(25px);
+    margin-top: 100px;
+  }
+  .containerFrancia {
+    display: inline-block;
+    transform: translate(5px);
+  }
+  .containerItalia {
+    display: inline-block;
+    left: 60px;
+  }
+}
+@media (min-width: 850px) {
+  .tarjetamiami {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    background-size: cover;
+    color: white;
+    padding: 5rem 7rem;
+    height: 250px;
+    width: 250px;
+    margin-left: 30px;
+    margin-right: 50px;
+  }
+  div.tarjetafrancia {
+    padding: 5rem 7rem;
+    box-shadow: 10px 5px 5px black;
+    height: 250px;
+    width: 250px;
+  }
+  div.tarjetaitalia {
+    display: inline-block;
+    background-size: cover;
+    color: black;
+    padding: 5rem 7rem;
+    height: 250px;
+    width: 250px;
+  }
+  .tarjetadeportivo {
+    width: 500px;
+    height: 250px;
+    top: 5px;
+  }
   .containerMiami {
     display: inline-block;
     transform: translate(25px);
