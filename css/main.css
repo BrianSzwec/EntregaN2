@@ -102,6 +102,35 @@ ul ol li {
   margin: 0px;
 }
 
+.containerMiami {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.containerFrancia {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.containerItalia {
+  display: grid;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.containerDeportivo {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 article.tarjetas {
   display: inline-block;
   position: relative;
@@ -130,7 +159,6 @@ article.tarjetas .tarjetaitalia {
   background-size: cover;
   padding: 20px 40px;
   box-shadow: 10px 5px 5px 5px black;
-  margin-left: 5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -162,41 +190,41 @@ article.tarjetas :hover {
 }
 
 footer .cajauno {
-  display: inline-block;
+  display: grid;
   padding: 5px;
-  margin-top: 30px;
-  background-color: rgba(128, 128, 128, 0.571);
+  margin-top: 5px;
+  background-color: rgba(128, 128, 128, 0.425);
   border-radius: 30px;
+  text-align: center;
 }
 footer .cajados {
-  display: inline-block;
+  display: grid;
   padding: 5px;
-  margin-top: 30px;
-  background-color: rgba(128, 128, 128, 0.571);
+  margin-top: 5px;
+  background-color: rgba(128, 128, 128, 0.425);
   border-radius: 30px;
+  text-align: center;
 }
 footer .cajatres {
-  display: inline-block;
+  display: grid;
   text-align: center;
-  margin-top: 3px;
-  background-color: rgba(128, 128, 128, 0.571);
+  margin-top: 5px;
+  background-color: rgba(128, 128, 128, 0.425);
   border-radius: 30px;
 }
 footer .cajacuatro {
-  display: inline-block;
+  display: grid;
   padding: 5px;
-  margin-top: 30px;
-  background-color: rgba(128, 128, 128, 0.571);
+  margin-top: 5px;
+  background-color: rgba(128, 128, 128, 0.425);
   border-radius: 30px;
   text-align: center;
 }
 
-@media (min-width: 900px) {
-  #navbarNav {
-    display: flex;
-    margin-left: 15rem;
-  }
+.mapaGOO {
+  width: 100%;
 }
+
 @media (min-width: 900px) {
   .navbar-brand {
     margin-left: 5rem;
@@ -225,70 +253,52 @@ footer .cajacuatro {
     padding: 20px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 769px) {
   .tarjetamiami {
     display: inline-block;
     text-decoration: none;
     list-style: none;
-    background-image: url(../img/miamihd.jpg);
     background-size: cover;
     color: white;
     padding: 5rem 7rem;
-    height: 350px;
-    width: 350px;
+    height: 250px;
+    width: 250px;
     margin-left: 30px;
     margin-right: 50px;
   }
-  .tarjetamiami h3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media (min-width: 900px) {
   div.tarjetafrancia {
     padding: 5rem 7rem;
     box-shadow: 10px 5px 5px black;
-    height: 350px;
-    width: 350px;
+    height: 250px;
+    width: 250px;
   }
-  div.tarjetafrancia h3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media (min-width: 900px) {
   div.tarjetaitalia {
     display: inline-block;
     background-size: cover;
     color: black;
     padding: 5rem 7rem;
-    height: 350px;
-    width: 350px;
+    height: 250px;
+    width: 250px;
   }
-  div.tarjetaitalia h3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .containerMiami {
+    display: inline-block;
+    transform: translate(25px);
+    margin-top: 100px;
   }
-}
-@media (min-width: 900px) {
-  div.tarjetadeportivo {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 10px 5px 5px black;
-    color: white;
-    height: 400px;
-    width: 600px;
-    left: 350px;
-    margin-top: 20px;
+  .containerFrancia {
+    display: inline-block;
+    transform: translate(5px);
+  }
+  .containerItalia {
+    display: inline-block;
+    left: 60px;
   }
 }
 @media (min-width: 900px) {
-  section.cajauno, section.cajados, section.cajatres, section.cajacuatro {
+  section.cajauno,
+section.cajados,
+section.cajatres,
+section.cajacuatro {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -386,7 +396,9 @@ html {
   font-family: tahoma;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   padding: 15px;
   color: white;
 }
@@ -502,11 +514,16 @@ label.txt__Contacto {
   grid-template-columns: repeat(5, 1fr);
 }
 
-.container > .header, .container > .content, .container > .sidebar, .container > .footerC, .container > div {
+.container > .header,
+.container > .content,
+.container > .sidebar,
+.container > .footerC,
+.container > div {
   padding: 20px;
 }
 
-.container > .header, .container > .footerC {
+.container > .header,
+.container > .footerC {
   grid-column: 1/-1;
   background-color: #1e272e;
   color: #ffffff;

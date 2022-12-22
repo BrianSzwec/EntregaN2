@@ -1,8 +1,7 @@
-
- $light-color: red;
- $dark-color: white;
- $gray-color: white;
- $main-font: 'tahoma';
+$light-color: red;
+$dark-color: white;
+$gray-color: white;
+$main-font: "tahoma";
 
 * {
   padding: 0px;
@@ -21,10 +20,9 @@
   display: flex;
   background-color: rgba(51, 140, 243, 0.877);
   padding: 10px;
- 
-  }
-  .navbar {
-    padding: 0px;
+}
+.navbar {
+  padding: 0px;
 
   .navbar-brand {
     border: solid 1px black;
@@ -114,6 +112,34 @@ ul ol li {
   margin: 0px;
 }
 
+.containerMiami {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.containerFrancia {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.containerItalia {
+  display: grid;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.containerDeportivo {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 article.tarjetas {
   display: inline-block;
   position: relative;
@@ -144,7 +170,7 @@ article.tarjetas {
     background-size: cover;
     padding: 20px 40px;
     box-shadow: 10px 5px 5px 5px black;
-    margin-left: 5rem;
+
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -181,74 +207,69 @@ article.tarjetas {
 
 footer {
   & .cajauno {
-    display: inline-block;
+    display: grid;
     padding: 5px;
-    margin-top: 30px;
-    background-color: rgba(128, 128, 128, 0.571);
+    margin-top: 5px;
+    background-color: rgba(128, 128, 128, 0.425);
     border-radius: 30px;
+    text-align: center;
   }
 
   & .cajados {
-    display: inline-block;
+    display: grid;
     padding: 5px;
-    margin-top: 30px;
-    background-color: rgba(128, 128, 128, 0.571);
+    margin-top: 5px;
+    background-color: rgba(128, 128, 128, 0.425);
     border-radius: 30px;
+    text-align: center;
   }
 
   & .cajatres {
-    display: inline-block;
+    display: grid;
     text-align: center;
 
-    margin-top: 3px;
-    background-color: rgba(128, 128, 128, 0.571);
+    margin-top: 5px;
+    background-color: rgba(128, 128, 128, 0.425);
     border-radius: 30px;
   }
 
   & .cajacuatro {
-    display: inline-block;
+    display: grid;
     padding: 5px;
-    margin-top: 30px;
-    background-color: rgba(128, 128, 128, 0.571);
+    margin-top: 5px;
+    background-color: rgba(128, 128, 128, 0.425);
     border-radius: 30px;
     text-align: center;
   }
 }
-
-@media(min-width:900px){
-  #navbarNav{
-    display: flex;
-    margin-left: 15rem;
-  }
+.mapaGOO {
+  width: 100%;
 }
 
-@media(min-width:900px){
-  .navbar-brand{
+@media (min-width: 900px) {
+  .navbar-brand {
     margin-left: 5rem;
     border: solid 1px black;
     padding: 10px;
     background-color: black;
     color: white;
-     border-radius: 30px;
+    border-radius: 30px;
   }
 }
-
-
 
 @media (min-width: 900px) {
   .tituloIndex {
     display: inline-block;
-   
+
     color: white;
     background-color: black;
     padding: 1px 8px;
     border-radius: 30px;
     position: relative;
-    
   }
- }
+}
 
- @media (min-width: 900px) {
+@media (min-width: 900px) {
   .containerCuenta {
     display: flex;
     align-items: center;
@@ -256,79 +277,56 @@ footer {
     padding: 20px;
   }
 }
-@media (min-width: 900px) {
 
+ @media (min-width: 769px) { 
+    .tarjetamiami {
+     display: inline-block;
+     text-decoration: none;
+     list-style: none;
+     background-size: cover;
+     color: white;
+     padding: 5rem 7rem;
+     height: 250px;
+     width: 250px;
+     margin-left: 30px;
+     margin-right: 50px;
+   }
+  
 
-.tarjetamiami {
-  display: inline-block;
-  text-decoration: none;
-  list-style: none;
-  background-image: url(../img/miamihd.jpg);
-  background-size: cover;
-  color: white;
-  padding: 5rem 7rem;
-  height: 350px;
-  width: 350px;
-  margin-left: 30px;
-  margin-right: 50px;
-
-  & h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+   div.tarjetafrancia {
+     padding: 5rem 7rem;
+     box-shadow: 10px 5px 5px black;
+     height: 250px;
+     width: 250px;
+   }
+   div.tarjetaitalia {
+     display: inline-block;
+     background-size: cover;
+     color: black;
+     padding: 5rem 7rem;
+     height: 250px;
+     width: 250px;
+   }
+   .containerMiami {
+     display: inline-block;
+     transform: translate(25px);
+     margin-top: 100px;
+   }
+   .containerFrancia {
+     display: inline-block;
+     transform: translate(5px);
+   }
+   .containerItalia {
+     display: inline-block;
+     left: 60px;
+   }
   }
-}}
-@media (min-width: 900px) {
-  div.tarjetafrancia {
-    padding: 5rem 7rem;
-    box-shadow: 10px 5px 5px black;
-    height: 350px;
-    width: 350px;
-  & h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-  }
-  }
-}
 @media (min-width: 900px) {
-  div.tarjetaitalia {
-    display: inline-block;
-    background-size: cover;
-    color: black;
-    padding: 5rem 7rem;
-    height: 350px;
-    width: 350px;
-    
-    & h3{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-    }
-
-  }
-}
-@media (min-width: 900px) {
-  div.tarjetadeportivo {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 10px 5px 5px black;
-    color: white;
-    height: 400px;
-    width: 600px;
-    left: 350px;
-    margin-top: 20px;
-    
-    
-  }
-}
-@media (min-width: 900px) {
-  section.cajauno , section.cajados , section.cajatres , section.cajacuatro {
+  section.cajauno,
+  section.cajados,
+  section.cajatres,
+  section.cajacuatro {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -336,17 +334,15 @@ footer {
     margin-top: 30px;
     background-color: rgba(128, 128, 128, 0.571);
     border-radius: 30px;
- 
   }
 }
-@media (min-width:900px){
-  .mapa{
-      width: 99%;
+@media (min-width: 900px) {
+  .mapa {
+    width: 99%;
   }
 }
 
- // hoteles
- 
+// hoteles
 
 #mainHoteles {
   background-image: url(../img/avion.jpg);
@@ -379,76 +375,62 @@ footer {
   align-items: center;
   font-family: tahoma;
   padding: 10px;
-
 }
 
-.pp{
-    border: solid 1px black;
-    padding: 5px;
-    border-radius: 20px;
-    color: white;
-    background-color:rgba(0, 0, 0, 0.582);
+.pp {
+  border: solid 1px black;
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.582);
+}
 
-             
-        
-  }
-  
-  .pp:hover{
-    transition: 1s;
-    transform: scale(2, 2);
-    background-color: red;
-    animation: 1s;
-    color: white;
-  
-  }
-  .ppyou{
-    border: solid 1px black;
-    padding: 5px;
-    border-radius: 20px;
-    color: white;
-    background-color:rgba(0, 0, 0, 0.582);
+.pp:hover {
+  transition: 1s;
+  transform: scale(2, 2);
+  background-color: red;
+  animation: 1s;
+  color: white;
+}
+.ppyou {
+  border: solid 1px black;
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.582);
+}
 
- }
- 
- .ppyou:hover{
-    transition: 1s;
-    transform: scale(2, 2);
-    background-color: red;
-    animation: 1s;
-    color: white;
- }
- .mapahotel{
-    background-color: rgba(128, 128, 128, 0.158);
-    border: black solid 4px;
-  }
+.ppyou:hover {
+  transition: 1s;
+  transform: scale(2, 2);
+  background-color: red;
+  animation: 1s;
+  color: white;
+}
+.mapahotel {
+  background-color: rgba(128, 128, 128, 0.158);
+  border: black solid 4px;
+}
 
+header.hAlquiler {
+  height: 80px;
+  background-color: rgba(51, 140, 243, 0.877);
+}
 
+//Contacto
 
+body,
+html {
+  font-family: tahoma;
+}
 
-  header.hAlquiler{
-    height: 80px;
-    background-color:rgba(51, 140, 243, 0.877)
-  }
-
-
-
-
-
-
- //Contacto
-
- 
- body,
- html{
-   font-family: tahoma;
-
-  }
-
-h1,h2,h3{
+h1,
+h2,
+h3 {
   padding: 15px;
   color: white;
 }
-footer.h{
+footer.h {
   display: flex;
   position: relative;
   justify-content: center;
@@ -456,23 +438,22 @@ footer.h{
   bottom: 80px;
 }
 a,
-a:visited{
+a:visited {
   text-decoration: none;
   color: purple;
 }
-label.txt__Contacto{
+label.txt__Contacto {
   color: white;
-
 }
 
-.container{
-  margin:auto;
+.container {
+  margin: auto;
   max-width: 1300px;
   overflow: auto;
   padding: 0 10px;
 }
 
-.botn{
+.botn {
   display: inline-block;
   font-size: 18px;
   color: white;
@@ -481,244 +462,238 @@ label.txt__Contacto{
   border: none;
   cursor: pointer;
 }
-   .botn:hover{
-     background: lightgray;
-   }
+.botn:hover {
+  background: lightgray;
+}
 
-   .large {
-     font-size: 1.5rem;
-   }
-   .small{
-     font-size: .6rem;
-   }
-   .txt-primary{
-     color:$light-color;
-   }
+.large {
+  font-size: 1.5rem;
+}
+.small {
+  font-size: 0.6rem;
+}
+.txt-primary {
+  color: $light-color;
+}
 
-   .txt-gray{
-     color: $gray-color;
-   }
-  
-   .p-80{
-     padding: 80px;
-   }
-   .fondoContacto{
-     background-image: url(../img/CONTACTO.jpg);
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: 1500px;
-    
-    
-   }
+.txt-gray {
+  color: $gray-color;
+}
 
- 
-  @media (min-width:900px) {
-    .form{
-      display: block;
-      
-     
-    }
-    .cont__login{ 
-      position: relative;
-      margin-bottom: 30px
-    ;
-    }
-    #tituloContacto{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .txt__Contacto{
-      margin-top: 10px;
-      font-size: 1.5rem;
-     
-    }
-    #Comentarios{
-      display: flex;
-      margin-top: 20px;
-    }
+.p-80 {
+  padding: 80px;
+}
+.fondoContacto {
+  background-image: url(../img/CONTACTO.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1500px;
+}
+
+@media (min-width: 900px) {
+  .form {
+    display: block;
   }
-   
-  //Cruceros
- .decruceros{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: 2.9em;
- }
-  #bk_cru{
-    background-image: url(../img/crucero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  .cont__login {
+    position: relative;
+    margin-bottom: 30px;
   }
-  
-  .container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 1.6em auto;
-    display: grid;
-    gap: 1.6em;
-    /* grid-template-columns: repeat(4, 1fr) 3%; */
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.container>.header, .container>.content, .container>.sidebar, .container>.footerC, .container>div {
-   
-    padding: 20px;
-    
-}
-
-.container>.header, .container>.footerC {
-    grid-column: 1/-1;
-    background-color: #1e272e;
-    color: #ffffff;
-}
-
-.container>.content {
-    grid-column: span 3;
-    grid-row: span 4;
-}
-
-.content>.article {
-    background: #808e9b;
-    padding: 20px;
-    margin-top: 5px;
-    color: #dfe6e9
-}
-
-
-
-.container>.sidebar {
-    grid-column: span 2;
-    grid-row: span 4;
-    background: #485460;
-    color: #ffffff;
+  #tituloContacto {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+  }
+  .txt__Contacto {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  #Comentarios {
+    display: flex;
+    margin-top: 20px;
+  }
+}
+
+//Cruceros
+.decruceros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.9em;
+}
+#bk_cru {
+  background-image: url(../img/crucero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  /* grid-template-columns: repeat(4, 1fr) 3%; */
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.container > .header,
+.container > .content,
+.container > .sidebar,
+.container > .footerC,
+.container > div {
+  padding: 20px;
+}
+
+.container > .header,
+.container > .footerC {
+  grid-column: 1/-1;
+  background-color: #1e272e;
+  color: #ffffff;
+}
+
+.container > .content {
+  grid-column: span 3;
+  grid-row: span 4;
+}
+
+.content > .article {
+  background: #808e9b;
+  padding: 20px;
+  margin-top: 5px;
+  color: #dfe6e9;
+}
+
+.container > .sidebar {
+  grid-column: span 2;
+  grid-row: span 4;
+  background: #485460;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container .sidebar img {
-    display: block;
-    width: 100%;
-    margin-top: 20px;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
 }
 
-.container>.related-post {
-    background:rgba(128, 128, 128, 0.493);
-    color: #ffffff;
-    height: 100px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
+.container > .related-post {
+  background: rgba(128, 128, 128, 0.493);
+  color: #ffffff;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container>.related-post:hover {
-    cursor: pointer;
-    transition: 2s;
-    transform: scale(1.1, 1.1);
-    animation: 2s;
-    
+.container > .related-post:hover {
+  cursor: pointer;
+  transition: 2s;
+  transform: scale(1.1, 1.1);
+  animation: 2s;
 }
-.footerC{
+.footerC {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.infoTu{
+.infoTu {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.deCrucerocom{
+.deCrucerocom {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 @media screen and (max-width: 900px) {
   .header {
-      text-align: center;
+    text-align: center;
   }
   .container .content {
-      grid-column: 1 / -1;
+    grid-column: 1 / -1;
   }
   .container .sidebar {
-      grid-column: 1 / 6;
+    grid-column: 1 / 6;
   }
 
   .container .related-post {
-      grid-column: 1/-1;
+    grid-column: 1/-1;
   }
 }
 
-
-
-
-
 //alquiler
 
+h1 .tituloAlquiler {
+  font-size: 3.5em;
+  font-family: tahoma;
+}
+h2 {
+  font-size: 2.7em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.25em;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 1.25em;
+}
 
-
-
-
-h1 .tituloAlquiler{ font-size: 3.5em; font-family: tahoma;}
-h2{ font-size: 2.7em;}
-h3{ font-size: 2em;}
-p{ font-size: 1.25em;}
-ul{ list-style: none;}
-li{ font-size: 1.25em;}
-
-.button__al{
+.button__al {
   font-size: 1.25em;
   font-weight: bold;
   padding: 10px 30px;
   border-radius: 5px;
-  border: 2px solid rgba(0,0,0,0.3);
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   color: white;
   background-color: rgba(51, 140, 243, 0.877);
 }
 
-.button__al:hover{
+.button__al:hover {
   background-color: red;
   transition: 1s;
-    transform: scale(1.1, 1.1);
-    animation: 3s;
-  
-  
+  transform: scale(1.1, 1.1);
+  animation: 3s;
 }
-.texto{
-  background: rgb(0,0,0);
-  background: radial-gradient(circle, rgba(0,0,0,0.8900862068965517) 16%, rgba(0,0,0,1) 44%);
+.texto {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.8900862068965517) 16%,
+    rgba(0, 0, 0, 1) 44%
+  );
 }
-.pGradient{
+.pGradient {
   color: white;
 }
 
-.container{
+.container {
   max-width: 1400px;
   margin: auto;
 }
 
-.color-acento{ color:red; }
+.color-acento {
+  color: red;
+}
 
-
-
-
-
-header .container{
+header .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
-
-#ofer{
+#ofer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -727,48 +702,48 @@ header .container{
   height: 90vh;
   background-image: linear-gradient(
       0deg,
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-  )
-  ,url("../img/porch\ trompa.jpg");
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/porch\ trompa.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
-#ofer h1{
+#ofer h1 {
   color: white;
 }
 
-#ofer button{
+#ofer button {
   font-size: 1.75em;
 }
 
-#alquiLart .container{
+#alquiLart .container {
   text-align: center;
   padding: 200px 12px;
 }
 
-#nuestros-vehiculos{
-  background-color: rgb(30,30,30);
+#nuestros-vehiculos {
+  background-color: rgb(30, 30, 30);
   color: white;
   text-align: center;
 }
 
-#nuestros-vehiculos .container{
+#nuestros-vehiculos .container {
   padding: 150px 12px;
 }
 
-#nuestros-vehiculos h2{
+#nuestros-vehiculos h2 {
   margin-top: 0;
   font-size: 3.2em;
 }
 
-#nuestros-vehiculos p{
+#nuestros-vehiculos p {
   display: none;
 }
 
-#nuestros-vehiculos .carta{
+#nuestros-vehiculos .carta {
   background-position: center center;
   background-size: cover;
   padding: 50px 0px;
@@ -776,219 +751,210 @@ header .container{
   border-radius: 15px;
 }
 
-.carta:first-child{
+.carta:first-child {
   background-image: linear-gradient(
       0deg,
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-  )
-  
-  ,url("../img/m7.jpg");
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/m7.jpg");
 }
 
-.carta:nth-child(2){
+.carta:nth-child(2) {
   background-image: linear-gradient(
       0deg,
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-  )
-  ,url("../img/aventador.jpg");
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/aventador.jpg");
 }
 
-.carta:nth-child(3){
+.carta:nth-child(3) {
   background-image: linear-gradient(
       0deg,
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-  )
-  ,url("../img/masce.jpg");
-
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/masce.jpg");
 }
 
-#caracteristicas .containerCar{
+#caracteristicas .containerCar {
   text-align: center;
   padding: 0px 12px;
   background-color: rgba(255, 0, 0, 0.678);
 }
 
-#caracteristicas li{
+#caracteristicas li {
   padding: 10px 0px;
   font-weight: bold;
 }
-#alquiLart{
+#alquiLart {
   background-image: url("../img/gifpag.gif");
   background-size: cover;
   display: flex;
- }
+}
 
-  
-
-
-#final{
+#final {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgb(30,30,30);
+  background-color: rgb(30, 30, 30);
   color: white;
   height: 80vh;
 }
 
-#final h2{
+#final h2 {
   font-size: 9vw;
 }
 
-#final button{
+#final button {
   font-size: 5vw;
 }
 
-footer{
-  background-color: rgb(230,230,230);
+footer {
+  background-color: rgb(230, 230, 230);
 }
 
-footer p{
+footer p {
   margin: 0;
   padding: 12px;
-  color: rgb(100,100,100);
+  color: rgb(100, 100, 100);
 }
 
-footer .container{
+footer .container {
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
-@media (min-width: 900px){
-  header{
-      position: fixed;
-      width: 100%;
+@media (min-width: 900px) {
+  header {
+    position: fixed;
+    width: 100%;
   }
 
-  header .container{
-      flex-direction: row;
-      justify-content: space-between;
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  header nav{
-      flex-direction: row;
-      padding-bottom: 0;
-      padding-right: 20px;
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
   }
 
-  #ofer h1{
-      font-size: 5em;
+  #ofer h1 {
+    font-size: 5em;
   }
 
-  #alquiLart .container{
-      display: flex;
-      justify-content: space-evenly;
+  #alquiLart .container {
+    display: flex;
+    justify-content: space-evenly;
   }
 
-  #alquiLart .texto{
-      width: 50%;
-      max-width: 600px;
-      text-align: initial;
-      padding-left: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+  #alquiLart .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  #alquiLart h2{
-      margin-top: 0px;
+  #alquiLart h2 {
+    margin-top: 0px;
   }
 
-  #alquiLart .img-container{
-      background-image: url("../img/gifpag.gif");
-      background-size: cover;
-      background-position: center center;
-      height: 500px;
-      width: 400px; 
+  #alquiLart .img-container {
+    background-image: url("../img/gifpag.gif");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
   }
 
-  #nuestros-vehiculos .vehiculos-carta{
-      display: flex;
-      justify-content: center;
+  #nuestros-vehiculos .vehiculos-carta {
+    display: flex;
+    justify-content: center;
   }
 
-  #nuestros-vehiculos p{
-      display: block;
-      margin-bottom: 30px;
+  #nuestros-vehiculos p {
+    display: block;
+    margin-bottom: 30px;
   }
 
-  #nuestros-vehiculos h2{
-      font-size: 4em;
+  #nuestros-vehiculos h2 {
+    font-size: 4em;
   }
 
-  #nuestros-vehiculos h3{
-      margin-top: 0;
+  #nuestros-vehiculos h3 {
+    margin-top: 0;
   }
 
-  #nuestros-vehiculos .carta{
-      padding: 50px;
-      background-size: 100% 150px;
-      background-repeat: no-repeat;
-      background-position-y: 0;
-      background-color: rgba(50, 50, 50, 1);
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  #nuestros-vehiculos .carta {
+    padding: 50px;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgba(50, 50, 50, 1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
 
-  .carta:first-child{
-      background-image: linear-gradient(
-          0deg,
-          rgba(0,0,0,0.5),
-          rgba(0,0,0,0.5)
-      )
-      ,url("../img/m7.jpg");
-
+  .carta:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../img/m7.jpg");
   }
 
-  .carta:nth-child(2){
-      background-image: linear-gradient(
-          0deg,
-          rgba(0,0,0,0.5),
-          rgba(0,0,0,0.5)
-      )
-      ,url("../img/aventador.jpg");
+  .carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../img/aventador.jpg");
   }
 
-  .carta:nth-child(3){
-      background-image: linear-gradient(
-          0deg,
-          rgba(0,0,0,0.5),
-          rgba(0,0,0,0.5)
-      )
-      ,url("../img/masce.jpg");
-
+  .carta:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../img/masce.jpg");
   }
 
- 
-
-  #caracteristicas .container{
-      text-align: initial;
+  #caracteristicas .container {
+    text-align: initial;
   }
 
-  #caracteristicas ul{
-      margin-left: 100px;
+  #caracteristicas ul {
+    margin-left: 100px;
   }
 
-  #final h2{
-      font-size: 5em;
+  #final h2 {
+    font-size: 5em;
   }
 
-  #final button{
-      font-size: 2em;
+  #final button {
+    font-size: 2em;
   }
 
-  footer .container{
-      justify-content: center;
+  footer .container {
+    justify-content: center;
   }
 }
 
 @media (min-width: 1200px) {
-  #caracteristicas{
-      background-position-x: calc(100vw - 800px);
+  #caracteristicas {
+    background-position-x: calc(100vw - 800px);
   }
 }
