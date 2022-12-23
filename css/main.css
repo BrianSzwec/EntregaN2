@@ -521,6 +521,12 @@ label.txt__Contacto {
   background-size: 1500px;
 }
 
+footer.h {
+  display: flex;
+  top: 200px;
+  background-color: gray;
+}
+
 @media (min-width: 900px) {
   .form {
     display: block;
@@ -563,7 +569,6 @@ label.txt__Contacto {
   margin: 1.6em auto;
   display: grid;
   gap: 1.6em;
-  /* grid-template-columns: repeat(4, 1fr) 3%; */
   grid-template-columns: repeat(5, 1fr);
 }
 
